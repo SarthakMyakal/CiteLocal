@@ -1,0 +1,32 @@
+# Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Private / generated data: never commit documents, indexes or the database
+data/
+storage/
+uploads/
+faiss_index/
+*.faiss
+*.db
+*.sqlite3
+
+# Secrets
+.env
+.env.*
+
+# Frontend
+node_modules/
+frontend/dist/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Personal notes (kept outside the repo)
+docs/WALKTHROUGH.md
