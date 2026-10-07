@@ -25,7 +25,7 @@ class Embedder:
         from sentence_transformers import SentenceTransformer
 
         self.model = SentenceTransformer(model_name, device="cpu")
-        self.dim = self.model.get_sentence_embedding_dimension()
+        self.dim = self.model.get_embedding_dimension()
 
     def embed(self, texts: list[str]) -> np.ndarray:
         vectors = self.model.encode(texts, batch_size=32, normalize_embeddings=True, show_progress_bar=False)
