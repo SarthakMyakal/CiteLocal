@@ -1,0 +1,77 @@
+{
+  "status": "Reviewed",
+  "notes": "Pages are 1-based PDF page numbers. 'pages' lists every page where the answer appears; a retrieval hit on any of them counts. Unanswerable questions have no doc/pages and are used to measure abstention.",
+  "questions": [
+    {"id": "att-1", "answerable": true, "doc": "Attention Is All You Need.pdf", "pages": [3], "question": "How many identical layers make up the Transformer's encoder stack?"},
+    {"id": "att-2", "answerable": true, "doc": "Attention Is All You Need.pdf", "pages": [5], "question": "What is the inner-layer dimensionality of the position-wise feed-forward network in the Transformer?"},
+    {"id": "att-3", "answerable": true, "doc": "Attention Is All You Need.pdf", "pages": [7], "question": "How many warmup steps were used in the Transformer's learning rate schedule?"},
+    {"id": "att-4", "answerable": true, "doc": "Attention Is All You Need.pdf", "pages": [8], "question": "What label smoothing value was used when training the Transformer?"},
+    {"id": "att-5", "answerable": true, "doc": "Attention Is All You Need.pdf", "pages": [1, 8], "question": "What BLEU score did the big Transformer reach on WMT 2014 English-to-German translation?"},
+    {"id": "att-6", "answerable": true, "doc": "Attention Is All You Need.pdf", "pages": [6], "question": "How are the sinusoidal positional encodings in the Transformer constructed, and what range do their wavelengths cover?"},
+
+    {"id": "bert-1", "answerable": true, "doc": "BERT.pdf", "pages": [4, 13], "question": "What percentage of input tokens does BERT mask at random during masked language model pre-training?"},
+    {"id": "bert-2", "answerable": true, "doc": "BERT.pdf", "pages": [4, 12], "question": "When BERT selects a token for masking, how often is it replaced with the [MASK] token, a random token, or left unchanged?"},
+    {"id": "bert-3", "answerable": true, "doc": "BERT.pdf", "pages": [5, 14], "question": "How many words do BooksCorpus and English Wikipedia contribute to BERT's pre-training corpus?"},
+    {"id": "bert-4", "answerable": true, "doc": "BERT.pdf", "pages": [3, 8], "question": "How many layers, hidden units, attention heads and total parameters does BERT-base have?"},
+    {"id": "bert-5", "answerable": true, "doc": "BERT.pdf", "pages": [1, 6], "question": "What GLUE score did BERT achieve?"},
+    {"id": "bert-6", "answerable": true, "doc": "BERT.pdf", "pages": [4], "question": "How are sentence pairs chosen for BERT's next sentence prediction task?"},
+    {"id": "bert-7", "answerable": true, "doc": "BERT.pdf", "pages": [13], "question": "Which activation function does BERT use instead of ReLU?"},
+    {"id": "bert-8", "answerable": true, "doc": "BERT.pdf", "pages": [4], "question": "How large is the WordPiece vocabulary used by BERT?"},
+
+    {"id": "roberta-1", "answerable": true, "doc": "RoBERTa.pdf", "pages": [3, 7], "question": "How much uncompressed text did the corpora used to pre-train RoBERTa total?"},
+    {"id": "roberta-2", "answerable": true, "doc": "RoBERTa.pdf", "pages": [4], "question": "In the static masking baseline compared against dynamic masking, how many times was the training data duplicated?"},
+    {"id": "roberta-3", "answerable": true, "doc": "RoBERTa.pdf", "pages": [6], "question": "What subword vocabulary size does RoBERTa's byte-level BPE use?"},
+    {"id": "roberta-4", "answerable": true, "doc": "RoBERTa.pdf", "pages": [3], "question": "Where does the CC-News dataset come from and how many news articles does it contain?"},
+
+    {"id": "lora-1", "answerable": true, "doc": "LoRA.pdf", "pages": [1], "question": "Compared with full fine-tuning of GPT-3 175B with Adam, how much does LoRA reduce trainable parameters and GPU memory?"},
+    {"id": "lora-2", "answerable": true, "doc": "LoRA.pdf", "pages": [4], "question": "How are LoRA's low-rank matrices A and B initialised?"},
+    {"id": "lora-3", "answerable": true, "doc": "LoRA.pdf", "pages": [5], "question": "How much does LoRA reduce VRAM consumption when training GPT-3 175B?"},
+    {"id": "lora-4", "answerable": true, "doc": "LoRA.pdf", "pages": [5, 10], "question": "Which self-attention weight matrices give the best results when adapted with LoRA?"},
+    {"id": "lora-5", "answerable": true, "doc": "LoRA.pdf", "pages": [4], "question": "How is the low-rank update scaled in LoRA, and why does that reduce hyperparameter tuning?"},
+
+    {"id": "colbert-1", "answerable": true, "doc": "colbert.pdf", "pages": [1, 2, 7, 9], "question": "How much faster is ColBERT than existing BERT-based ranking models, and how many fewer FLOPs does it need?"},
+    {"id": "colbert-2", "answerable": true, "doc": "colbert.pdf", "pages": [4], "question": "What special tokens does ColBERT prepend to queries and documents?"},
+    {"id": "colbert-3", "answerable": true, "doc": "colbert.pdf", "pages": [6], "question": "What type of faiss index does ColBERT use for end-to-end retrieval?"},
+    {"id": "colbert-4", "answerable": true, "doc": "colbert.pdf", "pages": [4, 5], "question": "What is the MaxSim operation in ColBERT's late interaction mechanism?"},
+
+    {"id": "dpr-1", "answerable": true, "doc": "dpr.pdf", "pages": [1], "question": "By how much does the dense passage retriever beat Lucene-BM25 on top-20 passage retrieval accuracy?"},
+    {"id": "dpr-2", "answerable": true, "doc": "dpr.pdf", "pages": [2, 4], "question": "How many Wikipedia passages are in the DPR retrieval corpus?"},
+    {"id": "dpr-3", "answerable": true, "doc": "dpr.pdf", "pages": [4], "question": "How long is each passage that DPR uses as a retrieval unit?"},
+    {"id": "dpr-4", "answerable": true, "doc": "dpr.pdf", "pages": [3], "question": "What is the in-batch negatives training trick used by DPR?"},
+    {"id": "dpr-5", "answerable": true, "doc": "dpr.pdf", "pages": [7], "question": "How many questions per second can DPR process when returning the top 100 passages?"},
+
+    {"id": "rag-1", "answerable": true, "doc": "rag.pdf", "pages": [3], "question": "What is the difference between RAG-Sequence and RAG-Token?"},
+    {"id": "rag-2", "answerable": true, "doc": "rag.pdf", "pages": [3], "question": "Which pre-trained model does RAG use as its generator, and how many parameters does it have?"},
+    {"id": "rag-3", "answerable": true, "doc": "rag.pdf", "pages": [4], "question": "How many 100-word documents make up RAG's Wikipedia index?"},
+    {"id": "rag-4", "answerable": true, "doc": "rag.pdf", "pages": [8], "question": "Did training RAG with 5 versus 10 retrieved documents make a significant difference?"},
+    {"id": "rag-5", "answerable": true, "doc": "rag.pdf", "pages": [2, 9], "question": "How can RAG's world knowledge be updated without retraining the model?"},
+
+    {"id": "sbert-1", "answerable": true, "doc": "sentence-BERT.pdf", "pages": [1, 2, 8], "question": "How long does finding the most similar pair among 10,000 sentences take with BERT compared with SBERT?"},
+    {"id": "sbert-2", "answerable": true, "doc": "sentence-BERT.pdf", "pages": [4], "question": "What is SBERT's default pooling strategy?"},
+    {"id": "sbert-3", "answerable": true, "doc": "sentence-BERT.pdf", "pages": [3, 7], "question": "Which vectors are concatenated before the softmax classifier in SBERT's classification objective?"},
+    {"id": "sbert-4", "answerable": true, "doc": "sentence-BERT.pdf", "pages": [4], "question": "How many annotated sentence pairs does the SNLI dataset contain?"},
+
+    {"id": "t5-1", "answerable": true, "doc": "t5.pdf", "pages": [6], "question": "What rule about line endings was used when cleaning Common Crawl text for C4?"},
+    {"id": "t5-2", "answerable": true, "doc": "t5.pdf", "pages": [7], "question": "Roughly how large is the C4 dataset?"},
+    {"id": "t5-3", "answerable": true, "doc": "t5.pdf", "pages": [12], "question": "Which tokenizer and vocabulary size does T5 use?"},
+    {"id": "t5-4", "answerable": true, "doc": "t5.pdf", "pages": [11], "question": "Which optimizer is used to train the T5 baseline?"},
+    {"id": "t5-5", "answerable": true, "doc": "t5.pdf", "pages": [13], "question": "In T5's span corruption objective, what replaces each span of corrupted tokens in the input?"},
+
+    {"id": "vit-1", "answerable": true, "doc": "vit.pdf", "pages": [2, 6], "question": "What ImageNet top-1 accuracy does the best Vision Transformer model reach?"},
+    {"id": "vit-2", "answerable": true, "doc": "vit.pdf", "pages": [5], "question": "How many layers and parameters does ViT-Huge have?"},
+    {"id": "vit-3", "answerable": true, "doc": "vit.pdf", "pages": [3], "question": "What learnable embedding does the Vision Transformer prepend to the sequence of patch embeddings?"},
+
+    {"id": "un-1", "answerable": false, "question": "What learning rate was used to train GPT-4?"},
+    {"id": "un-2", "answerable": false, "question": "Who won the 2018 FIFA World Cup?"},
+    {"id": "un-3", "answerable": false, "question": "What is the employee leave policy for new joiners?"},
+    {"id": "un-4", "answerable": false, "question": "What was the company's revenue in the third quarter of 2025?"},
+    {"id": "un-5", "answerable": false, "question": "How does Mamba's selective state space layer work?"},
+    {"id": "un-6", "answerable": false, "question": "What is the recommended adult dosage of ibuprofen?"},
+    {"id": "un-7", "answerable": false, "question": "What vocabulary size does Llama 3 use?"},
+    {"id": "un-8", "answerable": false, "question": "According to the Chinchilla scaling laws, how many training tokens should be used per parameter?"},
+    {"id": "un-9", "answerable": false, "question": "What is the boiling point of ethanol?"},
+    {"id": "un-10", "answerable": false, "question": "How many GPUs were used to train Stable Diffusion?"},
+    {"id": "un-11", "answerable": false, "question": "What dropout rate does the Mistral 7B model use?"},
+    {"id": "un-12", "answerable": false, "question": "What is the capital city of Australia?"}
+  ]
+}
